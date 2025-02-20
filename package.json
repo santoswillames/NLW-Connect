@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsup-node",
     "dev": "tsx watch --env-file=.env src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "drizzle-kit generate"
   },
   "keywords": [],
   "author": "",
